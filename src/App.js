@@ -1,24 +1,79 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Layout from "./components/layout/Layout";
+import Sidebar from "./components/sidebar/Sidebar";
+import Home from "./pages/home/Home";
+import Evening from "./pages/L1/Evening";
+import Saturday from "./pages/L1/Saturday";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ToastContainer />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Sidebar>
+              <Layout>
+                <Home />
+              </Layout>
+            </Sidebar>
+          }
+        />
+        <Route
+          path="/saturday"
+          element={
+            <Sidebar>
+              <Layout>
+                <Saturday />
+              </Layout>
+            </Sidebar>
+          }
+        />
+        <Route
+          path="/sunday"
+          element={
+            <Sidebar>
+              <Layout>
+                <Evening />
+              </Layout>
+            </Sidebar>
+          }
+        />
+        <Route
+          path="/monday"
+          element={
+            <Sidebar>
+              <Layout>
+                <Evening />
+              </Layout>
+            </Sidebar>
+          }
+        />
+        <Route
+          path="/tuesday"
+          element={
+            <Sidebar>
+              <Layout>
+                <Evening />
+              </Layout>
+            </Sidebar>
+          }
+        />
+        <Route
+          path="/friday"
+          element={
+            <Sidebar>
+              <Layout>
+                <Evening />
+              </Layout>
+            </Sidebar>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
