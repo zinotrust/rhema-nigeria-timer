@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 import Timer from "../../components/timer/Timer";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
 
   const ringBell = () => {
     final.play();
+    toast.success("Final Bell Rang");
   };
   return (
     <div className="--flex-start --flex-dir-column --mt">
