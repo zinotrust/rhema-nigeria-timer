@@ -1,0 +1,41 @@
+.box {
+  width: 45rem;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 5rem;
+  border: 1px solid #ccc;
+}
+
+.time {
+  width: 100%;
+  font-size: 4rem;
+  background: var(--color-primary);
+  color: var(--white);
+  padding: 4rem 5px;
+  border-radius: 5px;
+  font-family: "Roboto mono", monospace;
+  margin-bottom: 3rem;
+}
+
+button {
+  padding: 5px 1rem;
+  border: none;
+  outline: none;
+  margin: 0 5px;
+  cursor: pointer;
+  color: var(--white);
+  border-radius: 3px;
+}
+
+.start {
+  background-color: green;
+}
+
+.pause {
+  background-color: var(--color-sec);
+  border: 1px solid #ccc;
+  color: #000;
+}
+.reset {
+  background-color: red;
+}

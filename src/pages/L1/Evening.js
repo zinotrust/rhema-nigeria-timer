@@ -9,8 +9,8 @@ const Evening = () => {
   const { time } = useContext(TimeContext);
 
   useEffect(() => {
-    let warn = new Audio("/bell.mp3");
-    let final = new Audio("/bell.mp3");
+    let warn = new Audio("/warning.mp3");
+    let final = new Audio("/final.mp3");
 
     switch (time) {
       // session 1

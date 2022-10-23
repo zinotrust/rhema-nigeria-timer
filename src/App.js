@@ -6,6 +6,7 @@ import Sidebar from "./components/sidebar/Sidebar";
 import Home from "./pages/home/Home";
 import Evening from "./pages/L1/Evening";
 import Saturday from "./pages/L1/Saturday";
+import StopWatch from "./pages/stopWatch/StopWatch";
 
 function App() {
   return (
@@ -72,6 +73,16 @@ function App() {
             </Sidebar>
           }
         />
+        {/* <Route
+          path="/stop-watch"
+          element={
+            <Sidebar>
+              <Layout>
+                <StopWatch />
+              </Layout>
+            </Sidebar>
+          }
+        /> */}
       </Routes>
     </BrowserRouter>
   );

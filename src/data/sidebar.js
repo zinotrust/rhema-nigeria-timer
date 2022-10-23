@@ -39,6 +39,11 @@ const menu = [
       },
     ],
   },
+  {
+    title: "Stop Watch",
+    icon: <BsAlarm color="red" />,
+    path: "/stop-watch",
+  },
 ];
 
 export default menu;
